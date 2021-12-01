@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#F8F2D4"
+    android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:weightSum="100"
-    android:background="#F6E9A1"
-    android:gravity="center_vertical">
+    android:weightSum="100">
 
     <View
         android:layout_width="0dp"
-        android:layout_weight="1"
         android:layout_height="match_parent"
-        android:background="#D5BC39"/>
+        android:layout_weight="1"
+        android:background="#DDC64B" />
 
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="75"
-        android:layout_height="wrap_content"
         android:id="@+id/note_title"
-        android:textSize="23sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="75"
         android:lines="1"
-        android:text="this is some title"
         android:padding="10dp"
-        android:textColor="@color/black"/>
+        android:text="this is some title"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
     <View
         android:layout_width="0dp"
-        android:layout_weight="4"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
 
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="20"
-        android:layout_height="wrap_content"
         android:id="@+id/note_timestamp"
-        android:textSize="17sp"
-        android:lines="1"
-        android:text="Dec 2019"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
         android:padding="10dp"
-        />
+        android:text="Dec 2019"
+        android:textSize="17sp" />
 
 </LinearLayout>
